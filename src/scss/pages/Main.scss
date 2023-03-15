@@ -10,10 +10,6 @@
     row-gap: 93px;
     margin-top: 147px;
     &-title {
-      font-size: 64px;
-      line-height: 76px;
-      font-weight: 700;
-      font-family: RFDewiExpanded;
       & span {
         color: $lavander-blue;
       }
@@ -21,6 +17,30 @@
     &-description {
       max-width: 80%;
       color: $light-black;
+    }
+  }
+}
+
+.section {
+  margin-bottom: 160px;
+}
+
+.aboutUs {
+  margin-top: 48px;
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__cols {
+    display: flex;
+    justify-content: space-between;
+    &-left {
+      max-width: 430px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 108px;
+    }
+    &-right {
+      
     }
   }
 }
