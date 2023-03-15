@@ -28,12 +28,13 @@
 .aboutUs {
   margin-top: 48px;
   &__title {
-    margin-bottom: 90px;
+    // margin-bottom: 90px;
   }
   &__cols {
     display: flex;
     justify-content: space-between;
     &-left {
+      margin-top: 90px;
       max-width: 430px;
       display: flex;
       flex-direction: column;
