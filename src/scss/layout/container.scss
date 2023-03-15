@@ -133,8 +133,8 @@
         right: 20px;
         width: 120px;
         height: 120px;
-        fill: $specific-blue;
-        stroke: $specific-blue;
+        // fill: $specific-blue;
+        // stroke: $specific-blue;
         @media (max-width: $tablet) {
           width: 100px;
           height: 100px;
@@ -178,8 +178,8 @@
         background-color: $blues-secondary;
         color: $white;
         & svg {
-          fill: $specific-blue__secondary;
-          stroke: $specific-blue__secondary;
+          // fill: $specific-blue__secondary;
+          // stroke: $specific-blue__secondary;
         }
       }
     }

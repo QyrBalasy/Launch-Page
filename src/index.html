@@ -2,9 +2,33 @@
 <html lang="ru">
   @@include('html/head.html', { "title": "TheLoop - Разработка сайтов всех типов с индивидуальным дизайном для малого и среднего бизнеса" })
   <body>
-    @@include('html/header.html', {})
+    <div class="header-slogan">
+      @@include('html/header.html', {})
+      <section class="slogan">
+        <div class="container">
+          <div class="slogan__items">
+            <div class="slogan__text">
+              <h1 class="slogan__text-title">
+                Мы создаем дизайн не для сайтов, а
+                <span> для людей </span>
+              </h1>
+              <p class="slogan__text-description">
+                Разработка сайтов всех типов с индивидуальным дизайном для
+                малого и среднего бизнеса
+              </p>
+              <button>Хочу бесплатную консультацию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <main>
-      
+      <section class="aboutUs">
+        <div class="container">
+
+        </div>
+
+      </section>
     </main>
     @@include('html/footer.html', {})
     <script src="js/app.min.js"></script>

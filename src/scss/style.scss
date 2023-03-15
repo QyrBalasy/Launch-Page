@@ -33,18 +33,20 @@ body {
 }
 
 body {
-  font-family: Raleway;
-  font-weight: 300;
+  font-family: RFDewi;
+  font-weight: 400;
   font-display: swap;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 30px;
   font-feature-settings: "lnum";
-  color: $velvet-black;
+  color: $black;
   background-color: $white;
   &.lock {
     overflow: hidden;
   }
 }
+
+
 
 p {
   font-size: 18px;
@@ -60,7 +62,7 @@ a {
   font-size: 18px;
   line-height: 22px;
   font-weight: 300;
-  color: $velvet-black;
+  // color: $velvet-black;
   transition: all ease-in 0.5s;
   &:hover {
     color: $golden-crown__secondary;
@@ -69,4 +71,10 @@ a {
     font-size: 14px;
     line-height: 18px;
   }
+}
+
+.header-slogan{
+  background-color: $light-blue;
+  padding-top: 50px;
+  padding-bottom: 86px;
 }

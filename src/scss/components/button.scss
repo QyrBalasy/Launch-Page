@@ -7,7 +7,7 @@ button {
   border: none;
   border-radius: 6px;
   padding: 14px 32px;
-  color: $velvet-black;
+  // color: $velvet-black;
   font-size: 22px;
   line-height: 28px;
   font-weight: 300;
@@ -29,9 +29,9 @@ button {
 
 .secondary-btn {
   background-color: #fff;
-  border: 1px solid $velvet-black;
+  // border: 1px solid $velvet-black;
   &:hover {
-    background-color: $velvet-black;
+    // background-color: $velvet-black;
     color: $white;
   }
 }
