@@ -7,7 +7,7 @@
     max-width: 656px;
     display: flex;
     flex-direction: column;
-    row-gap: 93px;
+    row-gap: 90px;
     margin-top: 147px;
     &-title {
       & span {
@@ -26,9 +26,8 @@
 }
 
 .aboutUs {
-  margin-top: 48px;
+  margin-top: 74px;
   &__title {
-    // margin-bottom: 90px;
   }
   &__cols {
     display: flex;
@@ -44,13 +43,13 @@
         font-family: RFDewiExpanded;
         font-size: 200px;
         line-height: 300px;
-        color: #ECF3FF;
+        color: #ecf3ff;
       }
     }
     &-right {
       position: relative;
       flex-basis: 734px;
-      & .aboutUs__img{
+      & .aboutUs__img {
         float: right;
       }
       & .aboutUs__text {
@@ -95,6 +94,55 @@
           height: 22px;
         }
       }
+    }
+  }
+}
+
+.services {
+  &__title {
+    margin-bottom: 90px;
+  }
+}
+
+.accordion {
+  &__item {
+    &-title {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      & p {
+        font-size: 30px;
+        line-height: 36px;
+        color: $grey;
+      }
+    }
+    &--trigger {
+      padding: 40px 0;
+      border-top: 1px solid;
+      border-color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--arrow {
+      transition: all 0.2s ease;
+      & svg {
+        width: 40px;
+        height: 35px;
+      }
+    }
+    &--content {
+      padding: 20px 0;
+      display: none;
+      margin-left: auto;
+      max-width: 60%;
+    }
+    &--active .accordion__item--content {
+      display: block;
+    }
+
+    &--active .accordion__item--arrow {
+      transform: rotate(180deg);
     }
   }
 }
