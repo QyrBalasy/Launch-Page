@@ -36,12 +36,65 @@
     &-left {
       margin-top: 90px;
       max-width: 430px;
-      display: flex;
-      flex-direction: column;
-      row-gap: 108px;
+      & p:first-of-type {
+        max-width: 350px;
+        margin-bottom: 108px;
+      }
+      & p:last-of-type {
+        font-family: RFDewiExpanded;
+        font-size: 200px;
+        line-height: 300px;
+        color: #ECF3FF;
+      }
     }
     &-right {
-      
+      position: relative;
+      flex-basis: 734px;
+      & .aboutUs__img{
+        float: right;
+      }
+      & .aboutUs__text {
+        display: flex;
+        column-gap: 13px;
+        align-items: center;
+        position: absolute;
+        content: "";
+        border-radius: 10px;
+        padding: 20px 15px;
+        &:first-of-type {
+          background-color: $default-blue;
+          top: 61px;
+          left: 0;
+        }
+        &:nth-of-type(2) {
+          top: 185px;
+          right: 10px;
+          background-color: $pink;
+        }
+        &:last-of-type {
+          left: 0;
+          bottom: 145px;
+          background-color: $violet;
+        }
+        &--blue {
+          background-color: $high-blue;
+        }
+        &--pink {
+          background-color: $high-pink;
+        }
+        &--violet {
+          background-color: $high-violet;
+        }
+      }
+      & span {
+        border-radius: 3px;
+        padding: 2px;
+        display: flex;
+        & svg {
+          width: 22px;
+          height: 22px;
+        }
+      }
     }
   }
 }
