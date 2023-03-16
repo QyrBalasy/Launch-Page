@@ -146,3 +146,53 @@
     }
   }
 }
+
+.callUs {
+  background-image: url("@img/background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  &__content {
+    max-width: 764px;
+    & p {
+      margin-top: 55px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.advantages {
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 45px;
+    column-gap: 30px;
+  }
+  &__card-item {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px 0px #dbe8fe;
+    padding: 43px 20px;
+    position: relative;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 27px;
+    min-height: 234px;
+  }
+  &__card-icon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    top: -45px;
+    & svg {
+      width: 98px;
+      height: 98px;
+      fill: $default-blue;
+    }
+  }
+}
