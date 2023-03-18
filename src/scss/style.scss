@@ -46,19 +46,15 @@ body {
   }
 }
 
-
-
-
-
 a {
   text-decoration: none;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 300;
-  // color: $velvet-black;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $black;
   transition: all ease-in 0.5s;
   &:hover {
-    color: $golden-crown__secondary;
+    color: $high-blue;
   }
   @media (max-width: $L-mobile) {
     font-size: 14px;
@@ -66,8 +62,13 @@ a {
   }
 }
 
-.header-slogan{
-  background-color: $light-blue;
+.header-slogan {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(243, 247, 254, 1) 100%
+  );
+  backdrop-filter: blur(5px);
   padding-top: 50px;
   padding-bottom: 86px;
 }
