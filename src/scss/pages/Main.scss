@@ -205,3 +205,15 @@
     padding: 147px 0;
   }
 }
+
+.price{
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__text{
+    max-width: 640px;
+    & p:first-child{
+      margin-bottom: 51px;
+    }
+  }
+}
