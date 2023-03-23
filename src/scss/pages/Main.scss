@@ -197,7 +197,7 @@
   }
 }
 
-.additional{
+.additional {
   background-image: url("@img/background-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,14 +206,74 @@
   }
 }
 
-.price{
+.price {
   &__title {
     margin-bottom: 90px;
   }
-  &__text{
+  &__text {
     max-width: 640px;
-    & p:first-child{
+    & p:first-child {
       margin-bottom: 51px;
+    }
+  }
+}
+
+.contactForm {
+  &__wrapper {
+    border-radius: 38px;
+    overflow: hidden;
+  }
+  &__dots {
+    background-color: $violet;
+    height: 79px;
+    padding: 35px 36px 22px 36px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 19px;
+    &-item {
+      border-radius: 50px;
+      width: 22px;
+      height: 22px;
+      background-color: #ffd232;
+      &:first-child {
+        background-color: #ff0000;
+      }
+      &:last-child {
+        background-color: #5cc906;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 56px;
+    background-color: $light-grey;
+    &-text {
+      max-width: 480px;
+      &-title {
+        margin-bottom: 60px;
+        font-family: RFDewi;
+        font-weight: 400;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 38px;
+        &__item {
+          & a {
+            display: flex;
+            align-items: center;
+            column-gap: 33px;
+          }
+          & svg {
+            width: 34px;
+            height: 34px;
+          }
+        }
+      }
+    }
+    &-form {
+      max-width: 460px;
     }
   }
 }

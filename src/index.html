@@ -319,13 +319,18 @@
       <section class="section contactForm">
         <div class="container">
           <div class="contactForm__wrapper">
+            <div class="contactForm__dots">
+              <span class="contactForm__dots-item"></span>
+              <span class="contactForm__dots-item"></span>
+              <span class="contactForm__dots-item"></span>
+            </div>
             <div class="contactForm__item">
               <div class="contactForm__item-text">
-                <h3>
+                <h3 class="contactForm__item-text-title">
                   Конкуренты не ждут, уже сейчас заказывайте продающий сайт
                 </h3>
-                <ul>
-                  <li>
+                <ul class="contactForm__item-text-content">
+                  <li class="contactForm__item-text-content__item">
                     <a href="#">
                       <svg>
                         <use xlink:href="@img/icons/icons.svg#phone"></use>
@@ -333,7 +338,7 @@
                       +7747 814 23 85
                     </a>
                   </li>
-                  <li>
+                  <li class="contactForm__item-text-content__item">
                     <a href="#">
                       <svg>
                         <use xlink:href="@img/icons/icons.svg#mail"></use>
@@ -341,7 +346,7 @@
                       info@theloop.kz
                     </a>
                   </li>
-                  <li>
+                  <li class="contactForm__item-text-content__item">
                     <a href="#">
                       <svg>
                         <use xlink:href="@img/icons/icons.svg#location"></use>
@@ -351,7 +356,10 @@
                   </li>
                 </ul>
               </div>
-              <form class="contactForm__item-form"></form>
+              <form class="contactForm__item-form">
+                <input type="text">
+                <input type="tel">
+              </form>
             </div>
           </div>
         </div>
