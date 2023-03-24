@@ -129,6 +129,7 @@
       & svg {
         width: 40px;
         height: 35px;
+        fill: $violet;
       }
     }
     &--content {
@@ -168,7 +169,7 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    row-gap: 45px;
+    row-gap: 70px;
     column-gap: 30px;
   }
   &__card-item {
@@ -405,6 +406,7 @@
       &-item {
         min-height: 176px;
         position: relative;
+
         &::after {
           position: absolute;
           content: "";
