@@ -198,6 +198,15 @@
   }
 }
 
+.portfolio {
+  &__title {
+    margin-bottom: 90px;
+  }
+  & .portfolio__wrapper {
+    position: relative;
+  }
+}
+
 .additional {
   background-image: url("@img/background-2.jpg");
   background-repeat: no-repeat;

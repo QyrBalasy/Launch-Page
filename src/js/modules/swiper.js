@@ -4,7 +4,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export function MySwiper() {
-  const swiper = new Swiper(".reviewSwiper", {
+  const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination],
     direction: "horizontal",
     loop: false,
@@ -40,7 +40,7 @@ export function MySwiper() {
       },
       1000: {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: 21,
         centeredSlides: false,
       },
     },
