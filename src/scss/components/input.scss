@@ -1,11 +1,11 @@
 .input {
-  padding: 12px;
-  // border: 1px solid $default-blue;
-  border-radius: 6px;
+  padding: 9px 12px;
+  border-radius: 5px;
+  border: 1px solid $wet-grey;
   // color: $velvet-black;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
   &.error {
     border: 1px solid red;
   }

@@ -200,9 +200,19 @@
           <div class="callUs__content">
             <h2>Не знаете какой сайт вам нужен?</h2>
             <p>Оставьте свой номер и мы Вас проконсультируем бесплатно</p>
-            <form>
-              <input type="text" class="input" />
-              <input type="submit" class="button" />
+            <form class="callUs__form" name="formBanner" method="post">
+              <input
+                type="tel"
+                data-tel-input
+                placeholder="+7"
+                maxlength="18"
+                class="input"
+              />
+              <input
+                type="submit"
+                class="button button--secondary"
+                value="оставить заявку"
+              />
             </form>
           </div>
         </div>
@@ -291,21 +301,23 @@
                 <div class="portfolio__swiper-slide swiper-slide">
                   <img src="http://placehold.it/300x300/" />
                   <h3>Oxymaster</h3>
-                  <p>Разработка сайт-визитки для продажи кислорода в баллонах</p>
+                  <p>
+                    Разработка сайт-визитки для продажи кислорода в баллонах
+                  </p>
                 </div>
                 <div class="portfolio__swiper-slide swiper-slide">
                   <img src="http://placehold.it/300x300/" />
-                  <h3>DTV Group</h2>
+                  <h3>DTV Group</h3>
                   <p>Разработка дизайна для сайта дизайна интерьера</p>
                 </div>
                 <div class="portfolio__swiper-slide swiper-slide">
                   <img src="http://placehold.it/300x300/" />
-                  <h3>MyWave</h2>
+                  <h3>MyWave</h3>
                   <p>Разработка дизайна для сайта дизайна интерьера</p>
                 </div>
                 <div class="portfolio__swiper-slide swiper-slide">
                   <img src="http://placehold.it/300x300/" />
-                  <h3>ST nails</h2>
+                  <h3>ST nails</h3>
                   <p>Разработка дизайна для сайта дизайна интерьера</p>
                 </div>
               </div>
@@ -331,32 +343,33 @@
           <div class="process__card">
             <div class="process__card-item" style="--num: 1">
               <p class="process__card-item-text">
-                Оставьте заявку на нашем сайте указав свои данные
+                <b>Оставьте заявку</b> на нашем сайте указав свои данные
               </p>
             </div>
             <div class="process__card-item" style="--num: 2">
               <p class="process__card-item-text">
-                Наш менеджер перезвонит вам и проведет бесплатную консультацию
+                Наш <b>менеджер перезвонит</b> вам и проведет бесплатную
+                консультацию
               </p>
             </div>
             <div class="process__card-item" style="--num: 3">
               <p class="process__card-item-text">
-                Мы встречаемся с вами и обсуждаем все детали кейса
+                Мы встречаемся с вами и <b>обсуждаем</b> все детали кейса
               </p>
             </div>
             <div class="process__card-item" style="--num: 4">
               <p class="process__card-item-text">
-                Подписываем договор о создании сайта
+                Подписываем <b>договор</b> о создании сайта
               </p>
             </div>
             <div class="process__card-item" style="--num: 5">
               <p class="process__card-item-text">
-                Через месяц вы получаете готовый сайт
+                Через месяц вы получаете <b>готовый сайт</b>
               </p>
             </div>
             <div class="process__card-item last" style="--num: 6">
               <p class="process__card-item-text">
-                В течение 3 месяцев предоставляем поддержку сайта
+                В течение 3 месяцев предоставляем <b>поддержку</b>сайта
               </p>
             </div>
           </div>
@@ -418,9 +431,37 @@
                   </li>
                 </ul>
               </div>
-              <form class="contactForm__item-form">
-                <input type="text" />
-                <input type="tel" />
+              <form class="contactForm__item-form" method="post">
+                <div class="input-wrapper">
+                  <label for="name">Имя*</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    maxlength="30"
+                    data-reg="^[А-ЯЁ][а-яё]*$"
+                    class="input input-name"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="phone"> Номер телефона* </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    data-tel-input
+                    maxlength="18"
+                    class="input input-phone"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="message">Какой сайт вам нужен?</label>
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <input type="submit"
+                value="оставить заявку"
+                class="button button--secondary">
               </form>
             </div>
           </div>

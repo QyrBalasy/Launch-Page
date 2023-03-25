@@ -160,6 +160,11 @@
       margin-bottom: 60px;
     }
   }
+  &__form {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 27px;
+  }
 }
 
 .advantages {
