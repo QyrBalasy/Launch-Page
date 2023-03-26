@@ -9,6 +9,12 @@
   &.error {
     border: 1px solid red;
   }
+  &-textarea {
+    resize: none;
+    width: 100%;
+    height: 97px;
+  }
+
 }
 
 /*toggle switch*/

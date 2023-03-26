@@ -15,19 +15,25 @@
       }
     }
     &-description {
-      max-width: 80%;
       color: $light-black;
     }
+  }
+  &__icon {
+    
   }
 }
 
 .section {
   margin-bottom: 160px;
+  &__title {
+    margin-bottom: 90px;
+  }
 }
 
 .aboutUs {
   margin-top: 74px;
-  &__title {
+  & .section__title {
+    margin-bottom: 0;
   }
   &__cols {
     display: flex;
@@ -98,14 +104,15 @@
   }
 }
 
-.services {
-  &__title {
-    margin-bottom: 90px;
-  }
-}
 
 .accordion {
   &__item {
+    border-top: 1px solid;
+    border-color: black;
+    padding: 40px 0;
+    &:last-of-type {
+      border-bottom: 1px solid;
+    }
     &-title {
       display: flex;
       align-items: center;
@@ -117,12 +124,10 @@
       }
     }
     &--trigger {
-      padding: 40px 0;
-      border-top: 1px solid;
-      border-color: black;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
     }
     &--arrow {
       transition: all 0.2s ease;
@@ -168,9 +173,6 @@
 }
 
 .advantages {
-  &__title {
-    margin-bottom: 90px;
-  }
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -204,9 +206,6 @@
 }
 
 .portfolio {
-  &__title {
-    margin-bottom: 90px;
-  }
   & .portfolio__wrapper {
     position: relative;
   }
@@ -228,9 +227,6 @@
     rgba(219, 232, 254, 0.39) 35%,
     rgba(219, 232, 254, 0) 100%
   );
-  &__title {
-    margin-bottom: 90px;
-  }
   &__card {
     --cols: 1;
     display: grid;
@@ -468,9 +464,6 @@
 }
 
 .price {
-  &__title {
-    margin-bottom: 90px;
-  }
   &__text {
     max-width: 640px;
     & p:first-child {
@@ -534,7 +527,22 @@
       }
     }
     &-form {
-      max-width: 460px;
+      flex-basis: 460px;
+      & .input-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 18px;
+        & .input-label {
+          color: $light-black;
+        }
+      }
+      & .input-wrapper:last-of-type {
+        margin-bottom: 32px;
+      }
+      & .button--secondary {
+        width: 100%;
+      }
     }
   }
 }
