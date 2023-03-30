@@ -1,108 +1,26 @@
 .menu {
-  &__logo {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-    justify-content: center;
-    & svg {
-      width: 69px;
-      height: 50px;
-    }
-    @media (min-width: $tablet) {
-      display: none;
-    }
-  }
-  &__social {
-    display: flex;
-    column-gap: 22px;
-    justify-content: center;
-    & svg {
-      width: 37px;
-      height: 37px;
-    }
-    @media (min-width: $tablet) {
-      display: none;
-    }
-  }
-  &__list {
-    @media (min-width: $tablet) {
-      display: flex;
-      align-items: center;
-      column-gap: 80px;
-    }
-  }
-  &__list > li {
-    position: relative;
-    @media (min-width: $tablet) {
-      padding: 10px 0px;
-    }
-  }
-  &__link {
-    // color: $velvet-black;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  &__sub {
-    &-list {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: $light-yellow;
-      padding: 20px;
-      border-radius: 4px;
-      z-index: 10;
-      min-width: 300px;
-      @media (min-width: $tablet) {
-        transform: translate(0px, 10%);
-        visibility: hidden;
-        pointer-events: none;
-        opacity: 0;
-        transition: all 0.3s ease 0s;
-      }
-      & li {
-        padding: 16px 0;
-        border-bottom: 1px solid $yellow-crown;
-        &:first-child {
-          padding-top: 0;
-        }
-        &:last-child {
-          padding-bottom: 0;
-          border-bottom: none;
-        }
-      }
-    }
-    &-link {
-      // color: $velvet-black;
-      font-size: 18px;
-      line-height: 22px;
-    }
-  }
-  &__arrow {
-    display: none;
-  }
   &__burger {
-  }
-  @media (max-width: $tablet) {
-    &__burger {
+    @media (max-width: $tablet) {
       z-index: 21;
       display: block;
       position: relative;
-      width: 40px;
+      width: 43px;
       height: 26px;
       cursor: pointer;
       & span,
       &::before,
       &::after {
         position: absolute;
-        left: 0;
         width: 100%;
-        height: 10%;
+        height: 12%;
         transition: all 0.3s ease 0s;
-        // background-color: $velvet-black;
+        background-color: $black;
+        border-radius: 10px;
       }
       &::before,
       &::after {
         content: "";
+        left: 0;
       }
       &::before {
         top: 0;
@@ -113,6 +31,8 @@
       & span {
         top: 50%;
         transform: scale(1) translate(0px, -50%);
+        width: 26px;
+        right: 0;
       }
       &._active {
         & span {
@@ -128,20 +48,27 @@
         }
       }
     }
-    &__body {
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 88px;
+    @media (max-width: $tablet) {
       position: fixed;
       top: 0;
       right: -100%;
       width: 100%;
       height: 100%;
       background-color: #fff;
-      padding: 19px 0;
+      padding: 114px 0;
       transition: right 0.3s ease 0s;
       overflow: auto;
       z-index: 20;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
+      row-gap: 50px;
+      align-items: center;
       &._active {
         right: 0;
       }
@@ -158,34 +85,66 @@
         z-index: 2;
       }
     }
-    &__list {
-      text-align: center;
+  }
+  &__list {
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      column-gap: 67px;
+    }
+    @media (max-width: $tablet) {
+      width: 100%;
       max-width: 700px;
       margin: 0 auto;
-      & > li {
-        flex-wrap: wrap;
-        margin: 0px 0px 30px 0px;
-        &:last-child {
-          margin-bottom: 0;
-        }
-        &._active .menu__sub-list {
-          display: block;
-        }
-      }
     }
-    &__link {
-      font-size: 24px;
-    }
-    &__sub-list {
-      position: relative;
-      background-color: #fff;
-      flex: 1 1 100%;
-      margin: 20px 0px 0px 0px;
+  }
+  &__info {
+    @media (min-width: $tablet){
       display: none;
     }
-    &__sub-link {
-      font-size: 20px;
-      color: #000;
+    @media (max-width: $tablet){
+      display: flex;
+      flex-direction: column;
+      max-width: 700px;
+      row-gap: 30px;
+      width: 100%;
+      & svg {
+        width: 34px;
+        height: 34px;
+        margin-right: 28px;
+      }
+    }
+  }
+  &__social {
+    @media (min-width: $tablet){
+      display: none;
+    }
+    @media (max-width: $tablet){
+      display: flex;
+      max-width: 700px;
+      column-gap: 30px;
+      width: 100%;
+      & svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  &__link {
+    @media (max-width: $tablet) {
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  &__lang {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    @media (max-width: $tablet) {
+      margin-top: auto;
     }
   }
 }
