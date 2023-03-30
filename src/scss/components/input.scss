@@ -19,7 +19,7 @@
 
 /*toggle switch*/
 
-.header__lang {
+.menu__lang {
   & > span {
     position: absolute;
     top: 4px;
@@ -31,12 +31,12 @@
   }
 }
 
-.header__lang > span.on {
+.menu__lang > span.on {
   left: 0;
   padding-left: 2px;
 }
 
-.header__lang > span.off {
+.menu__lang > span.off {
   right: 0;
   padding-right: 4px;
 }
