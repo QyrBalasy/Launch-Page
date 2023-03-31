@@ -100,6 +100,12 @@
       flex-direction: column;
       align-items: baseline;
     }
+    @media (max-width: $L-mobile) {
+      max-width: 480px;
+    }
+    @media (max-width: $mobile) {
+      max-width: 300px;
+    }
   }
   &__info {
     @media (min-width: $tablet) {
@@ -117,6 +123,12 @@
         margin-right: 28px;
       }
     }
+    @media (max-width: $L-mobile) {
+      max-width: 480px;
+    }
+    @media (max-width: $mobile) {
+      max-width: 300px;
+    }
   }
   &__social {
     @media (min-width: $tablet) {
@@ -128,15 +140,27 @@
       column-gap: 30px;
       width: 100%;
       & svg {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
       }
+    }
+    @media (max-width: $L-mobile) {
+      max-width: 480px;
+    }
+    @media (max-width: $mobile) {
+      max-width: 300px;
     }
   }
   &__link {
     @media (max-width: $tablet) {
       font-size: 40px;
       line-height: 50px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    @media (max-width: $L-mobile) {
+      font-size: 32px;
+      line-height: 36px;
       font-weight: 600;
       text-transform: uppercase;
     }

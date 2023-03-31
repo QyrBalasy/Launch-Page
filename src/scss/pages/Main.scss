@@ -25,7 +25,7 @@
     margin-bottom: 0;
   }
   & .section__cols-left {
-    margin-top: 90px;
+    margin-top: 130px;
     max-width: 430px;
     & p:first-of-type {
       max-width: 350px;
@@ -36,6 +36,12 @@
       font-size: 200px;
       line-height: 300px;
       color: #ecf3ff;
+    }
+    @media (max-width: $laptop) {
+      margin-top: 100px;
+    }
+    @media (max-width: $tablet) {
+      margin-top: 64px;
     }
   }
   & .section__cols-right {
@@ -157,6 +163,9 @@
 }
 
 .advantages-section {
+  & .section__cards-item:nth-child(even) {
+    box-shadow: none;
+  }
 }
 
 .portfolio-section {

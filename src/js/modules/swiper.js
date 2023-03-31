@@ -45,4 +45,36 @@ export function MySwiper() {
       },
     },
   });
+  // Обработчик клика на слайдер
+  document.querySelectorAll(".swiper-slide").forEach((slide) => {
+    slide.addEventListener("click", () => {
+      const modalId = slide.getAttribute("data-modal");
+      openModal(modalId);
+    });
+  });
+
+  // Функция для открытия модального окна и отображения текущего слайда
+  const openModal = (modalId) => {
+    const modal = document.getElementById("modal");
+    const modalImg = modal.querySelector("img");
+    const slideImg = document.querySelector(`[data-modal="${modalId}"] img`);
+
+    modalImg.src = slideImg.src;
+    modal.classList.add("openModal");
+
+    // Добавляем обработчик клика на кнопку закрытия
+    const closeBtn = modal.querySelector(".close");
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("openModal");
+      modalImg.src = "";
+    });
+
+    // Добавляем обработчик клика на модальное окно для закрытия
+    modal.addEventListener("click", (event) => {
+      if (!event.target.closest(".modal-content")) {
+        modal.classList.remove("openModal");
+        modalImg.src = "";
+      }
+    });
+  };
 }

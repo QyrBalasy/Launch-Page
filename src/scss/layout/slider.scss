@@ -8,7 +8,7 @@
   border-radius: 10px;
   background-color: $sky-blue;
   min-height: 470px;
-  padding: 20px 38px;
+  padding: 20px 26px;
   display: flex;
   flex-direction: column;
   row-gap: 13px;
@@ -45,6 +45,13 @@
     opacity: 1;
     transform: translateY(0);
     transition: all ease 0.9s;
+  }
+
+  @media (min-width: $laptop) {
+    height: 570px;
+  }
+  @media (max-width: $laptop) {
+    height: 470px;
   }
 }
 

@@ -219,7 +219,7 @@
               <input
                 type="submit"
                 class="button button--secondary"
-                value="оставить заявку"
+                value="Оставить заявку"
               />
             </form>
           </div>
@@ -306,27 +306,62 @@
           <div class="portfolio__wrapper">
             <div class="portfolio__swiper swiper">
               <div class="portfolio__swiper-wrapper swiper-wrapper">
-                <div class="portfolio__swiper-slide swiper-slide">
+                <div
+                  class="portfolio__swiper-slide swiper-slide"
+                  data-modal="modal-1"
+                >
                   <img src="http://placehold.it/300x300/" />
-                  <h3>Oxymaster</h3>
+                  <h3>ЛидерСтрой Проект</h3>
                   <p>
-                    Разработка сайт-визитки для продажи кислорода в баллонах
+                    Разработка и дизайн корпоративного сайта для дополнительного
+                    образования.
                   </p>
                 </div>
-                <div class="portfolio__swiper-slide swiper-slide">
+                <div
+                  class="portfolio__swiper-slide swiper-slide"
+                  data-modal="modal-2"
+                >
+                  <img src="http://placehold.it/300x300/" />
+                  <h3>Oxymaster</h3>
+                  <p>Лендинг страница для продажи кислородного баллона</p>
+                </div>
+                <div
+                  class="portfolio__swiper-slide swiper-slide"
+                  data-modal="modal-3"
+                >
+                  <img src="http://placehold.it/300x300/red" />
+                  <h3>FeedPet</h3>
+                  <p>
+                    Дизайн одностраничного сайта для MVP проекта на конструкоре
+                    Tilda.
+                  </p>
+                </div>
+                <div
+                  class="portfolio__swiper-slide swiper-slide"
+                  data-modal="modal-4"
+                >
                   <img src="http://placehold.it/300x300/" />
                   <h3>DTV Group</h3>
-                  <p>Разработка дизайна для сайта дизайна интерьера</p>
+                  <p>
+                    Дизайн с разработкой лендинг страницы для продажи курсов по
+                    арбитражу
+                  </p>
                 </div>
-                <div class="portfolio__swiper-slide swiper-slide">
+                <div
+                  class="portfolio__swiper-slide swiper-slide"
+                  data-modal="modal-5"
+                >
                   <img src="http://placehold.it/300x300/" />
-                  <h3>MyWave</h3>
-                  <p>Разработка дизайна для сайта дизайна интерьера</p>
+                  <h3>34cm</h3>
+                  <p>Одностраничный сайт для услуг дизайн-интерьера</p>
                 </div>
-                <div class="portfolio__swiper-slide swiper-slide">
+                <div
+                  class="portfolio__swiper-slide swiper-slide"
+                  data-modal="modal-6"
+                >
                   <img src="http://placehold.it/300x300/" />
-                  <h3>ST nails</h3>
-                  <p>Разработка дизайна для сайта дизайна интерьера</p>
+                  <h3>ClimaTech</h3>
+                  <p>Разработка логотипа и презентации.</p>
                 </div>
               </div>
             </div>
@@ -375,7 +410,7 @@
             </div>
             <div class="process-section__card-item last" style="--num: 6">
               <p class="process-section__card-item-text">
-                В течение 3 месяцев предоставляем <b>поддержку</b>сайта
+                В течение 3 месяцев предоставляем <b>поддержку</b> сайта
               </p>
             </div>
           </div>
@@ -478,7 +513,7 @@
 
                   <input
                     type="submit"
-                    value="оставить заявку"
+                    value="Оставить заявку"
                     class="button button--secondary"
                   />
                 </form>
@@ -489,6 +524,15 @@
       </section>
     </main>
     @@include('html/footer.html', {})
+    <!-- HTML структура модального окна -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal__container">
+        <div class="modal-content" role="dialog" aria-modal="true">
+          <button class="close">x</button>
+          <img src="" alt="Modal Image" />
+        </div>
+      </div>
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>
