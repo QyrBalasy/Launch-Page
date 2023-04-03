@@ -1,12 +1,41 @@
 .slogan-section {
   & .section__cols {
     margin-top: 92px;
+    @media (max-width: $laptop) {
+      gap: 50px;
+      margin-top: 78px;
+    }
+    @media (max-width: $tablet) {
+      gap: 50px;
+      margin-top: 60px;
+      flex-direction: column-reverse;
+    }
+    @media (max-width: $L-mobile) {
+      margin-top: 30px;
+    }
   }
   & .section__cols-left {
     max-width: 656px;
+    @media (max-width: $laptop) {
+      // flex-basis: 60%;
+    }
+  }
+  & .section__cols-right {
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
   }
   & .section__cols-left__content {
-    row-gap: 90px;
+    row-gap: 106px;
+    @media (max-width: $laptop) {
+     row-gap: 69px;
+    }
+    @media (max-width: $tablet) {
+     row-gap: 52px;
+    }
+    @media (max-width: $L-mobile) {
+     row-gap: 40px;
+    }
   }
   &__title {
     & span {
@@ -17,6 +46,16 @@
     }
   }
   &__icon {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    & img {
+      width: 100%;
+      @media (min-width: $laptop) {
+        max-width: 500px;
+      }
+    }
   }
 }
 

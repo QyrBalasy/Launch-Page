@@ -99,11 +99,19 @@
         display: flex;
         justify-content: flex-start;
         margin: 0 auto;
+        & button {
+          width: 100%;
+        }
       }
     }
     @media (max-width: $L-mobile) {
       padding-top: 77px;
       padding-bottom: 77px;
+      & ul {
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: $mobile) {
       & ul {
         margin: 0;
       }
@@ -207,7 +215,7 @@
       display: none;
     }
     @media (max-width: $L-mobile) {
-      // max-width: 480px;
+      max-width: 480px;
     }
     @media (max-width: $mobile) {
       margin: 0;
