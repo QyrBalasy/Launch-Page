@@ -28,13 +28,13 @@
   & .section__cols-left__content {
     row-gap: 106px;
     @media (max-width: $laptop) {
-     row-gap: 69px;
+      row-gap: 69px;
     }
     @media (max-width: $tablet) {
-     row-gap: 52px;
+      row-gap: 52px;
     }
     @media (max-width: $L-mobile) {
-     row-gap: 40px;
+      row-gap: 40px;
     }
   }
   &__title {
@@ -65,16 +65,44 @@
   }
   & .section__cols-left {
     margin-top: 130px;
-    max-width: 430px;
+    flex-basis: 40%;
+    @media (max-width: $laptop) {
+      margin-top: 100px;
+    }
+    @media (max-width: $tablet) {
+      margin-top: 70px;
+      flex-basis: 100%;
+    }
+    @media (max-width: $L-mobile) {
+      margin-top: 40px;
+    }
     & p:first-of-type {
-      max-width: 350px;
+      width: 350px;
       margin-bottom: 108px;
+      @media (max-width: $tablet) {
+        margin-bottom: 56px;
+        width: 80%;
+        & br {
+          display: none;
+        }
+      }
+      @media (max-width: $L-mobile) {
+        margin-bottom: 30px;
+      }
     }
     & p:last-of-type {
       font-family: RFDewiExpanded;
       font-size: 200px;
       line-height: 300px;
       color: #ecf3ff;
+      @media (max-width: $laptop) {
+        font-size: 160px;
+        line-height: 160px;
+      }
+      @media (max-width: $tablet) {
+        font-size: 100px;
+        line-height: 100px;
+      }
     }
     @media (max-width: $laptop) {
       margin-top: 100px;
@@ -85,9 +113,21 @@
   }
   & .section__cols-right {
     position: relative;
-    flex-basis: 734px;
+    flex-basis: 60%;
+    @media (max-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      flex-basis: 100%;
+    }
     & .aboutUs__img {
       float: right;
+      min-width: 320px;
+      @media (max-width: $laptop) {
+        max-width: 451px;
+      }
+      @media (max-width: $L-mobile) {
+        width: 100%;
+      }
     }
     & .aboutUs__text {
       display: flex;
@@ -97,20 +137,32 @@
       content: "";
       border-radius: 10px;
       padding: 20px 15px;
+      @media (max-width: $L-mobile) {
+        padding: 10px 12px;
+      }
       &:first-of-type {
         background-color: $default-blue;
         top: 61px;
         left: 0;
+        @media (max-width: $L-mobile) {
+          top: 15px;
+        }
       }
       &:nth-of-type(2) {
         top: 185px;
         right: 10px;
         background-color: $pink;
+        @media (max-width: $L-mobile) {
+          right: 0;
+        }
       }
       &:last-of-type {
         left: 0;
         bottom: 145px;
         background-color: $violet;
+        @media (max-width: $L-mobile) {
+          bottom: 15px;
+        }
       }
       &--blue {
         background-color: $high-blue;
