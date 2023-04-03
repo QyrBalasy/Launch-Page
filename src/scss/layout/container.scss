@@ -43,7 +43,7 @@
       margin-bottom: 70px;
     }
     @media (max-width: $mobile) {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
   &__text {
@@ -64,6 +64,7 @@
     @media (max-width: $L-mobile) {
       flex-direction: column;
       row-gap: 40px;
+      align-items: normal;
     }
     &-left {
       // flex-basis: 50%;
