@@ -4,10 +4,20 @@
     padding: 82px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $laptop) {
+      padding: 60px 0;
+      row-gap: 60px;
+    }
     &-item {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      flex-basis: 33%;
+      min-width: 300px;
+      @media (max-width: $laptop) {
+        // flex-basis: 50%;
+      }
     }
   }
   &__logo {
@@ -30,8 +40,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    // font-size: 18px;
-    // line-height: 22px;
+    @media (max-width: $L-mobile) {
+        row-gap: 22px;
+      }
     &-item {
       display: flex;
       column-gap: 28px;

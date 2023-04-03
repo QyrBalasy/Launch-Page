@@ -23,6 +23,12 @@ button {
     font-size: 20px;
     line-height: 26px;
   }
+  @media (max-width: $mobile) {
+    padding: 20px;
+    font-size: 20px;
+    line-height: 26px;
+    min-width: 320px;
+  }
 
   &--secondary {
     padding: 8px 38px;

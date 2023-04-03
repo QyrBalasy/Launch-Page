@@ -56,5 +56,7 @@ body {
   );
   // backdrop-filter: blur(5px);
   padding-top: 50px;
-  // padding-bottom: 86px;
+  @media (max-width: $L-mobile) {
+      padding-top: 32px;
+    }
 }
