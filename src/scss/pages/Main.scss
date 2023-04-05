@@ -124,7 +124,7 @@
     }
     & .aboutUs__img {
       float: right;
-      min-width: 320px;
+      min-width: 300px;
       @media (max-width: $laptop) {
         max-width: 451px;
       }
@@ -250,18 +250,47 @@
   background-image: url("@img/background-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 0;
-  &__content {
-    max-width: 764px;
-    & p {
-      margin-top: 55px;
-      margin-bottom: 60px;
+  padding: 60px 0 48px 0;
+
+  @media (max-width: $laptop) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: $L-mobile) {
+    padding: 28px 0;
+  }
+  & .section__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 58px;
+    @media (max-width: $laptop) {
+      row-gap: 50px;
     }
+    @media (max-width: $tablet) {
+      row-gap: 46px;
+    }
+    @media (max-width: $L-mobile) {
+      row-gap: 36px;
+    }
+  }
+  & .section__title {
+    margin: 0;
+    max-width: 764px;
   }
   &__form {
     display: flex;
     justify-content: flex-start;
-    column-gap: 27px;
+    column-gap: 34px;
+    @media (max-width: $L-mobile) {
+      flex-wrap: wrap;
+      row-gap: 36px;
+    }
+    & input {
+      flex-basis: 50%;
+      @media (max-width: $L-mobile) {
+        flex-basis: 100%;
+      }
+    }
   }
 }
 
