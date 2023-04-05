@@ -1,8 +1,5 @@
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2 {
   font-weight: 700;
   color: $black;
   font-family: RFDewiExpanded;
@@ -59,13 +56,10 @@ h3 {
 h4 {
   font-size: 32px;
   line-height: 36px;
-  @media (max-width: $tablet) {
-    font-size: 22px;
-    line-height: 28px;
-  }
+  font-weight: 400;
   @media (max-width: $L-mobile) {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 26px;
+    line-height: 30px;
   }
 }
 

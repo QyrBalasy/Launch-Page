@@ -82,29 +82,67 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    row-gap: 70px;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    row-gap: 58px;
     column-gap: 30px;
+    @media (max-width: $laptop) {
+      row-gap: 75px;
+      column-gap: 26px;
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 68px;
+      row-gap: 68px;
+    }
+    @media (max-width: $L-mobile) {
+      column-gap: 10px;
+      row-gap: 68px;
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
     &-item {
       border-radius: 15px;
       box-shadow: 0px 4px 10px 0px #dbe8fe;
-      padding: 43px 20px;
+      padding: 35px 20px;
       position: relative;
       justify-self: center;
       display: flex;
       justify-content: center;
       flex-direction: column;
       row-gap: 27px;
-      min-height: 234px;
+      min-height: 160px;
+      width: 100%;
+      @media (max-width: $laptop) {
+        padding: 30px 15px;
+      }
+      @media (max-width: $tablet) {
+        row-gap: 20px;
+        height: 200px;
+      }
+      @media (max-width: $L-mobile) {
+        height: auto;
+        padding: 30px 10px;
+      }
     }
     &-icon {
-      width: 100px;
-      height: 100px;
+      width: 98px;
+      height: 98px;
       display: inline-block;
       position: absolute;
-      top: -45px;
+      top: -40px;
+      @media (max-width: $laptop) {
+        width: 80px;
+        height: 80px;
+      }
+      @media (max-width: $L-mobile) {
+        width: 60px;
+        height: 60px;
+        top: -25px;
+      }
       & svg {
-        width: 98px;
-        height: 98px;
+        width: 100%;
+        height: 100%;
         fill: $default-blue;
       }
     }
