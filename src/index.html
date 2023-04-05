@@ -206,9 +206,7 @@
       <section id="callUs" class="section callUs-section">
         <div class="container">
           <div class="section__wrapper">
-            <h2 class="section__title">
-              Не знаете какой сайт вам нужен?
-            </h2>
+            <h2 class="section__title">Не знаете какой сайт вам нужен?</h2>
             <p class="section__text">
               Оставьте свой номер и мы Вас проконсультируем бесплатно
             </p>
@@ -375,7 +373,7 @@
           </div>
         </div>
       </section>
-      <!--<section id="additional" class="section additional-section">
+      <section id="additional" class="section additional-section">
         <div class="container">
           <h3 class="additional-section__title">
             Мы разрабатываем, создаем и запускаем цифровые продукты, которые
@@ -423,7 +421,13 @@
       </section>
       <section id="price" class="section price-section">
         <div class="container">
-          <h2 class="section__title">Цены</h2>
+          <div class="section__cols">
+            <h2 class="section__title">Цены</h2>
+            <svg>
+              <use xlink:href="@img/icons/icons.svg#logo-abbreviated"></use>
+            </svg>
+          </div>
+
           <div class="section__text">
             <p>
               Всех наших клиентов волнует одинаковый вопрос – сколько стоит
@@ -448,7 +452,8 @@
             <div class="section__cols">
               <div class="section__cols-left">
                 <h3 class="contactForm-section__title">
-                  Конкуренты не ждут, уже сейчас заказывайте продающий сайт
+                  Конкуренты не ждут, уже <span> сейчас </span> заказывайте
+                  продающий сайт
                 </h3>
                 <ul class="contactForm-section__text">
                   <li class="contactForm-section__text__item">
@@ -526,7 +531,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     @@include('html/footer.html', {})
     <!-- HTML структура модального окна -->

@@ -250,6 +250,7 @@
   background-image: url("@img/background-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 60px 0 48px 0;
 
   @media (max-width: $laptop) {
@@ -316,8 +317,18 @@
   background-image: url("@img/background-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   &__title {
     padding: 147px 0;
+    @media (max-width: $laptop) {
+      padding: 77px 0;
+    }
+    @media (max-width: $tablet) {
+      padding: 58px 0;
+    }
+    @media (max-width: $L-mobile) {
+      padding: 50px 0;
+    }
   }
 }
 
@@ -567,6 +578,24 @@
 }
 
 .price-section {
+  & .section__cols {
+    align-items: flex-start;
+    @media (max-width: $L-mobile) {
+      flex-direction: row;
+    }
+    & svg {
+      width: 80px;
+      height: 147px;
+      @media (max-width: $tablet) {
+        width: 60px;
+        height: 100px;
+      }
+      @media (max-width: $L-mobile) {
+        width: 30px;
+        height: 50px;
+      }
+    }
+  }
   & .section__text {
     max-width: 640px;
     & p:first-child {
@@ -579,6 +608,7 @@
   &__wrapper {
     border-radius: 38px;
     overflow: hidden;
+    border: 1px solid $lavander-blue;
   }
   &__dots {
     background-color: $violet;
@@ -603,6 +633,10 @@
   & .section__cols {
     padding: 58px 56px;
     background-color: $light-grey;
+    @media (max-width: $laptop) {
+        padding: 65px 38px;
+        gap: 10px;
+      }
     &-left {
       max-width: 480px;
     }
@@ -614,6 +648,9 @@
     margin-bottom: 60px;
     font-family: RFDewi;
     font-weight: 400;
+    & span {
+      color: $lavander-blue;
+    }
   }
   &__text {
     display: flex;
