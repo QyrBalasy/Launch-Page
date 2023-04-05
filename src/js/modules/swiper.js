@@ -15,9 +15,9 @@ export function MySwiper() {
       prevEl: ".swiper-button-prev",
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
     },
 
     breakpoints: {
@@ -45,6 +45,7 @@ export function MySwiper() {
       },
     },
   });
+
   // Обработчик клика на слайдер
   document.querySelectorAll(".swiper-slide").forEach((slide) => {
     slide.addEventListener("click", () => {
@@ -77,4 +78,19 @@ export function MySwiper() {
       }
     });
   };
+
+  function handleResize() {
+    // Если ширина экрана меньше или равна 360px, то показываем только пагинацию
+    if (window.innerWidth <= 650) {
+      swiper.pagination.init();
+      swiper.pagination.update();
+    }
+    else {
+      swiper.pagination.destroy();
+      swiper.pagination.update();
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  handleResize();
 }
