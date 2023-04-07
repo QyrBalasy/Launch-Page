@@ -9,6 +9,8 @@ import * as burger from "./modules/burger.js";
 import { MySwiper } from "./modules/swiper.js";
 import * as Counterer from "./modules/counter.js";
 import { showContent } from "./modules/accordion.js";
+import runSplineAnimation from "./modules/scene.js";
+
 
 flsFunctions.isWebp();
 // accordion.showContent();
@@ -22,3 +24,4 @@ burger.burgerMenuCustom();
 MySwiper();
 Counterer.windowLoad();
 showContent();
+runSplineAnimation();
