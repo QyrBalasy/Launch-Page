@@ -1,17 +1,21 @@
 .slogan-section {
   & .section__cols {
-    margin-top: 92px;
+    margin-top: 146px;
+    padding-bottom: 125px;
     @media (max-width: $laptop) {
       gap: 50px;
-      margin-top: 78px;
+      margin-top: 106px;
+      padding-bottom: 110px;
     }
     @media (max-width: $tablet) {
-      gap: 50px;
-      margin-top: 60px;
+      margin-top: 88px;
       flex-direction: column-reverse;
+      padding-bottom: 75px;
     }
     @media (max-width: $L-mobile) {
-      margin-top: 30px;
+      margin-top: 33px;
+      row-gap: 40px;
+      padding-bottom: 15px;
     }
   }
   & .section__cols-left {
@@ -26,12 +30,9 @@
     }
   }
   & .section__cols-left__content {
-    row-gap: 106px;
+    row-gap: 100px;
     @media (max-width: $laptop) {
-      row-gap: 69px;
-    }
-    @media (max-width: $tablet) {
-      row-gap: 52px;
+      row-gap: 50px;
     }
     @media (max-width: $L-mobile) {
       row-gap: 40px;
@@ -48,6 +49,7 @@
   &__icon {
     display: flex;
     align-items: center;
+    justify-content: center;
     & img {
       width: 100%;
       @media (min-width: $laptop) {
@@ -228,6 +230,7 @@
       display: none;
       margin-left: auto;
       width: 60%;
+      list-style: disc;
       @media (max-width: $L-mobile) {
         margin-left: 0;
         max-width: 100%;
@@ -249,27 +252,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 60px 0 48px 0;
-
-  @media (max-width: $laptop) {
+  padding: 82px 0;
+  @media (max-width: $tablet) {
     padding: 50px 0;
   }
-
   @media (max-width: $L-mobile) {
-    padding: 28px 0;
+    padding: 35px 0;
   }
   & .section__wrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 58px;
-    @media (max-width: $laptop) {
-      row-gap: 50px;
-    }
+    row-gap: 50px;
     @media (max-width: $tablet) {
-      row-gap: 46px;
-    }
-    @media (max-width: $L-mobile) {
-      row-gap: 36px;
+      row-gap: 40px;
     }
   }
   & .section__title {
@@ -317,12 +312,12 @@
   background-size: cover;
   background-position: center;
   &__title {
-    padding: 147px 0;
+    padding: 149px 0 172px 0;
     @media (max-width: $laptop) {
-      padding: 77px 0;
+      padding: 95px 0;
     }
     @media (max-width: $tablet) {
-      padding: 58px 0;
+      padding: 70px 0;
     }
     @media (max-width: $L-mobile) {
       padding: 50px 0;
@@ -343,6 +338,7 @@
     grid-template-columns: repeat(var(--cols), 1fr);
     gap: 173px;
     position: relative;
+    padding-top: 42px;
     &::before {
       position: absolute;
       content: "";
@@ -597,7 +593,13 @@
   & .section__text {
     max-width: 640px;
     & p:first-child {
-      margin-bottom: 51px;
+      margin-bottom: 50px;
+      @media (max-width: $tablet) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: $L-mobile) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -629,12 +631,13 @@
     }
   }
   & .section__cols {
-    padding: 58px 56px;
+    padding: 47px 68px 57px 68px;
     background-color: $light-grey;
+    align-items: normal;
     @media (max-width: $laptop) {
-        padding: 65px 38px;
-        gap: 10px;
-      }
+      padding: 65px 38px;
+      gap: 10px;
+    }
     &-left {
       max-width: 480px;
     }

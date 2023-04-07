@@ -32,15 +32,12 @@
     margin-bottom: 80px;
   }
   &__title {
-    margin-bottom: 130px;
-    @media (max-width: $laptop) {
-      margin-bottom: 100px;
-    }
+    margin-bottom: 100px;
     @media (max-width: $tablet) {
-      margin-bottom: 90px;
+      margin-bottom: 80px;
     }
     @media (max-width: $L-mobile) {
-      margin-bottom: 70px;
+      margin-bottom: 50px;
     }
     @media (max-width: $mobile) {
       margin-bottom: 40px;
@@ -85,14 +82,17 @@
     grid-template-rows: repeat(2, minmax(0, 1fr));
     row-gap: 58px;
     column-gap: 30px;
+    padding-top: 42px;
     @media (max-width: $laptop) {
       row-gap: 75px;
       column-gap: 26px;
+      padding-top: 30px;
     }
     @media (max-width: $tablet) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       column-gap: 68px;
       row-gap: 68px;
+      padding-top: 20px;
     }
     @media (max-width: $L-mobile) {
       column-gap: 10px;
