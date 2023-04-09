@@ -10,10 +10,11 @@ import { MySwiper } from "./modules/swiper.js";
 import * as Counterer from "./modules/counter.js";
 import { showContent } from "./modules/accordion.js";
 import runSplineAnimation from "./modules/scene.js";
-
+import initLanguageToggle from "./modules/translate.js";
 
 flsFunctions.isWebp();
 // accordion.showContent();
+initLanguageToggle();
 phoneInput.isPhone();
 // mymodal.modal();
 burger.burgerMenuCustom();
