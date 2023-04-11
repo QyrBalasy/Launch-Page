@@ -19,7 +19,7 @@
   }
   @media (max-width: $mobile) {
     max-width: 360px;
-    padding: 0 30px;
+    padding: 0 10px;
   }
 }
 
@@ -115,10 +115,11 @@
       width: 100%;
       @media (max-width: $laptop) {
         padding: 30px 15px;
+        justify-content: flex-start;
       }
       @media (max-width: $tablet) {
         row-gap: 20px;
-        height: 200px;
+        height: 234px;
       }
       @media (max-width: $L-mobile) {
         height: auto;
@@ -137,6 +138,9 @@
       @media (max-width: $laptop) {
         width: 80px;
         height: 80px;
+      }
+      @media (max-width: $tablet) {
+        top: -25px;
       }
       @media (max-width: $L-mobile) {
         width: 60px;

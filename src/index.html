@@ -22,6 +22,9 @@
             <div class="section__cols-right">
               <div class="slogan-section__icon">
                 <canvas id="canvas3d"></canvas>
+                <figure>
+                  <img src="files/UI.gif" alt="UI gif" />
+                </figure>
               </div>
             </div>
           </div>
@@ -62,10 +65,13 @@
                 конкурентов и приносить клиентов. Еще и собираем сайты на
                 no-code инструменте.
               </p>
-              <p>[</p>
             </div>
             <div class="section__cols-right">
-              <img class="aboutUs__img" src="@img/woman.png" alt="woman" />
+              <picture>
+                <source srcset="@img/woman.webp" type="image/webp" />
+                <source srcset="@img/woman.png" type="image/png" />
+                <img class="aboutUs__img" src="@img/woman.png" alt="woman" />
+              </picture>
               <br style="clear: both" />
               <div class="aboutUs__text">
                 <span class="aboutUs__text--blue">
@@ -268,7 +274,7 @@
                   <use xlink:href="@img/icons/icons.svg#website-big"></use>
                 </svg>
               </span>
-              <h4 class="section__cards-title">Гибкость</h4>
+              <h4 class="advantages__card-title">Гибкость</h4>
               <p class="section__cards-description">
                 Возможность вводить правки в этапах разработки
               </p>
@@ -309,65 +315,150 @@
                 <div
                   class="portfolio__swiper-slide swiper-slide"
                   data-modal="modal-1"
+                  data-title="ЛидерСтрой Проект"
+                  data-description="Разработка и дизайн корпоративного сайта для дополнительного образования."
                 >
-                  <img src="http://placehold.it/300x300/" />
-                  <h3>ЛидерСтрой Проект</h3>
-                  <p>
-                    Разработка и дизайн корпоративного сайта для дополнительного
-                    образования.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="@img/Liderstroy-small.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="@img/Liderstroy-small.png"
+                      type="image/png"
+                    />
+                    <img
+                      src="@img/Liderstroy-small.png"
+                      alt="Liderstroy-small"
+                    />
+                  </picture>
+                  <div class="portfolio__swiper-slide__text">
+                    <h3 class="portfolio__swiper-slide__title">Лидер Строй</h3>
+                    <p class="portfolio__swiper-slide__description">
+                      Корпоративный сайт с 5 страницами
+                    </p>
+                  </div>
                 </div>
                 <div
                   class="portfolio__swiper-slide swiper-slide"
                   data-modal="modal-2"
+                  data-title="Oxymaster"
+                  data-description="Лендинг страница для продажи кислородного баллона."
                 >
-                  <img src="http://placehold.it/300x300/" />
-                  <h3>Oxymaster</h3>
-                  <p>Лендинг страница для продажи кислородного баллона</p>
+                  <picture>
+                    <source
+                      srcset="@img/oxyMaster-small.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="@img/oxyMaster-small.png"
+                      type="image/png"
+                    />
+                    <img
+                      src="@img/oxyMaster-small.png"
+                      alt="Liderstroy-small"
+                    />
+                  </picture>
+                  <div class="portfolio__swiper-slide__text">
+                    <h3 class="portfolio__swiper-slide__title">Oxymaster</h3>
+                    <p class="portfolio__swiper-slide__description">
+                      Лендинг страница для продажи кислородного баллона
+                    </p>
+                  </div>
                 </div>
                 <div
                   class="portfolio__swiper-slide swiper-slide"
                   data-modal="modal-3"
+                  data-title="FeedPet"
+                  data-description="Дизайн одностраничного сайта для MVP проекта на конструкоре Tilda."
                 >
-                  <img src="http://placehold.it/300x300/red" />
-                  <h3>FeedPet</h3>
-                  <p>
-                    Дизайн одностраничного сайта для MVP проекта на конструкоре
-                    Tilda.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="@img/FeedPet-small.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="@img/FeedPet-small.png" type="image/png" />
+                    <img src="@img/FeedPet-small.png" alt="FeedPet-small" />
+                  </picture>
+                  <div class="portfolio__swiper-slide__text">
+                    <h3 class="portfolio__swiper-slide__title">FeedPet</h3>
+                    <p class="portfolio__swiper-slide__description">
+                      Дизайн одностраничного сайта для MVP проекта на
+                      конструкоре Tilda.
+                    </p>
+                  </div>
                 </div>
                 <div
                   class="portfolio__swiper-slide swiper-slide"
                   data-modal="modal-4"
+                  data-title="DTV Group"
+                  data-description="Дизайн с разработкой лендинг страницы для продажи курсов по арбитражу."
                 >
-                  <img src="http://placehold.it/300x300/" />
-                  <h3>DTV Group</h3>
-                  <p>
-                    Дизайн с разработкой лендинг страницы для продажи курсов по
-                    арбитражу
-                  </p>
+                  <picture>
+                    <source
+                      srcset="@img/DTVgroup-small.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="@img/DTVgroup-small.png" type="image/png" />
+                    <img src="@img/DTVgroup-small.png" alt="DTVgroup-small" />
+                  </picture>
+                  <div class="portfolio__swiper-slide__text">
+                    <h3 class="portfolio__swiper-slide__title">DTV Group</h3>
+                    <p class="portfolio__swiper-slide__description">
+                      Дизайн с разработкой лендинг страницы для продажи курсов
+                      по арбитражу
+                    </p>
+                  </div>
                 </div>
                 <div
                   class="portfolio__swiper-slide swiper-slide"
                   data-modal="modal-5"
+                  data-title="34cm"
+                  data-description="Одностраничный сайт для услуг дизайн-интерьера."
                 >
-                  <img src="http://placehold.it/300x300/" />
-                  <h3>34cm</h3>
-                  <p>Одностраничный сайт для услуг дизайн-интерьера</p>
+                  <picture>
+                    <source srcset="@img/34cm-small.webp" type="image/webp" />
+                    <source srcset="@img/34cm-small.png" type="image/png" />
+                    <img src="@img/34cm-small.png" alt="34cm-small" />
+                  </picture>
+                  <div class="portfolio__swiper-slide__text">
+                    <h3 class="portfolio__swiper-slide__title">34cm</h3>
+                    <p class="portfolio__swiper-slide__description">
+                      Одностраничный сайт для услуг дизайн-интерьера
+                    </p>
+                  </div>
                 </div>
                 <div
                   class="portfolio__swiper-slide swiper-slide"
                   data-modal="modal-6"
+                  data-title="ClimaTech"
+                  data-description="Разработка логотипа и презентации."
                 >
-                  <img src="http://placehold.it/300x300/" />
-                  <h3>ClimaTech</h3>
-                  <p>Разработка логотипа и презентации.</p>
+                  <picture>
+                    <source
+                      srcset="@img/climaTech-small.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="@img/climaTech-small.png"
+                      type="image/png"
+                    />
+                    <img src="@img/climaTech-small.png" alt="climaTech-small" />
+                  </picture>
+                  <div class="portfolio__swiper-slide__text">
+                    <h3 class="portfolio__swiper-slide__title">ClimaTech</h3>
+                    <p class="portfolio__swiper-slide__description">
+                      Разработка логотипа и презентации.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="portfolio__swiper-navigation">
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -537,6 +628,8 @@
         <div class="modal-content" role="dialog" aria-modal="true">
           <button class="close">x</button>
           <img src="" alt="Modal Image" />
+          <h3 class="modal-title"></h3>
+          <p class="modal-description"></p>
         </div>
       </div>
     </div>
