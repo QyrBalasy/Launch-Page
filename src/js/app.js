@@ -1,27 +1,23 @@
 import * as flsFunctions from "./modules/functions.js";
-// import * as accordion from "./modules/accordion.js";
 import * as phoneInput from "./modules/phoneinput.js";
 // import * as mymodal from "./modules/modal.js";
 import * as burger from "./modules/burger.js";
-// import { smoothScroll } from "./modules/burger.js";
 // import { formValidate, formValidateBanner } from "./modules/form.js";
 // import { onEntry } from "./modules/fadeBlocks.js";
 import { MySwiper } from "./modules/swiper.js";
-import * as Counterer from "./modules/counter.js";
 import { showContent } from "./modules/accordion.js";
 import runSplineAnimation from "./modules/scene.js";
 
 
 flsFunctions.isWebp();
-// accordion.showContent();
+burger.burgerMenuCustom();
+runSplineAnimation();
 phoneInput.isPhone();
 // mymodal.modal();
-burger.burgerMenuCustom();
-// smoothScroll();
+// onEntry();
+showContent();
+MySwiper();
 // formValidate();
 // formValidateBanner();
-// onEntry();
-MySwiper();
-Counterer.windowLoad();
-showContent();
-runSplineAnimation();
+
+
