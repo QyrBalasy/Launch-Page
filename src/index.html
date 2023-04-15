@@ -16,7 +16,9 @@
                   Разработка сайтов всех типов с индивидуальным дизайном для
                   малого и среднего бизнеса
                 </p>
-                <button class="button">Получить консультацию</button>
+                <button class="button form-trigger">
+                  Получить консультацию
+                </button>
               </div>
             </div>
             <div class="section__cols-right">
@@ -315,11 +317,18 @@
             <div class="portfolio__swiper swiper">
               <div class="portfolio__swiper-wrapper swiper-wrapper">
                 <div
-                  class="portfolio__swiper-slide swiper-slide"
+                  class="portfolio__swiper-slide swiper-slide trigger"
                   data-modal="modal-1"
                   data-title="ЛидерСтрой Проект"
                   data-description="Разработка и дизайн корпоративного сайта для дополнительного образования."
                 >
+                  <picture>
+                    <img
+                      src="@img/123.png"
+                      alt="Liderstroy-small"
+                      class="portfolio-card__big"
+                    />
+                  </picture>
                   <picture>
                     <source
                       srcset="@img/Liderstroy-small.webp"
@@ -332,8 +341,10 @@
                     <img
                       src="@img/Liderstroy-small.png"
                       alt="Liderstroy-small"
+                      class="portfolio-card"
                     />
                   </picture>
+
                   <div class="portfolio__swiper-slide__text">
                     <h3 class="portfolio__swiper-slide__title">Лидер Строй</h3>
                     <p class="portfolio__swiper-slide__description">
@@ -342,7 +353,7 @@
                   </div>
                 </div>
                 <div
-                  class="portfolio__swiper-slide swiper-slide"
+                  class="portfolio__swiper-slide swiper-slide trigger"
                   data-modal="modal-2"
                   data-title="Oxymaster"
                   data-description="Лендинг страница для продажи кислородного баллона."
@@ -369,7 +380,7 @@
                   </div>
                 </div>
                 <div
-                  class="portfolio__swiper-slide swiper-slide"
+                  class="portfolio__swiper-slide swiper-slide trigger"
                   data-modal="modal-3"
                   data-title="FeedPet"
                   data-description="Дизайн одностраничного сайта для MVP проекта на конструкоре Tilda."
@@ -391,7 +402,7 @@
                   </div>
                 </div>
                 <div
-                  class="portfolio__swiper-slide swiper-slide"
+                  class="portfolio__swiper-slide swiper-slide trigger"
                   data-modal="modal-4"
                   data-title="DTV Group"
                   data-description="Дизайн с разработкой лендинг страницы для продажи курсов по арбитражу."
@@ -413,7 +424,7 @@
                   </div>
                 </div>
                 <div
-                  class="portfolio__swiper-slide swiper-slide"
+                  class="portfolio__swiper-slide swiper-slide trigger"
                   data-modal="modal-5"
                   data-title="34cm"
                   data-description="Одностраничный сайт для услуг дизайн-интерьера."
@@ -431,7 +442,7 @@
                   </div>
                 </div>
                 <div
-                  class="portfolio__swiper-slide swiper-slide"
+                  class="portfolio__swiper-slide swiper-slide trigger"
                   data-modal="modal-6"
                   data-title="ClimaTech"
                   data-description="Разработка логотипа и презентации."
@@ -531,7 +542,7 @@
           </div>
         </div>
       </section>
-      <section id="contactForm" class="section contactForm-section">
+      <!-- <section id="contactForm" class="section contactForm-section">
         <div class="container">
           <div class="contactForm-section__wrapper">
             <div class="contactForm-section__dots">
@@ -625,20 +636,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    @@include('html/footer.html', {})
-    <!-- HTML структура модального окна -->
-    <div class="modal" id="modal" aria-hidden="true">
-      <div class="modal__container">
-        <div class="modal-content" role="dialog" aria-modal="true">
-          <button class="close">x</button>
-          <img src="" alt="Modal Image" />
-          <h3 class="modal-title"></h3>
-          <p class="modal-description"></p>
-        </div>
-      </div>
-    </div>
+    @@include('html/footer.html', {}) @@include('html/modal.html', {})
     <script src="js/app.min.js"></script>
   </body>
 </html>

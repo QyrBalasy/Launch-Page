@@ -44,6 +44,9 @@ body {
   &.lock {
     overflow: hidden;
   }
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 .header-slogan {

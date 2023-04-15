@@ -17,7 +17,7 @@
   margin-bottom: 40px;
   & picture {
   }
-  & img {
+  & .portfolio-card {
     opacity: 0;
     transition: all ease 0.4s;
     width: 100%;
@@ -51,7 +51,7 @@
     box-shadow: 0px 4px 3px 0px #0000001a;
   }
 
-  &:hover img {
+  &:hover .portfolio-card {
     opacity: 1;
     transition: all ease 0.9s;
   }
@@ -71,6 +71,9 @@
   }
   @media (max-width: $laptop) {
     // height: 470px;
+  }
+  & .portfolio-card__big {
+    display: none;
   }
 }
 

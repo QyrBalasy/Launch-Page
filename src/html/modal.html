@@ -1,0 +1,107 @@
+<div class="modal" aria-hidden="true">
+  <div class="modal-content" role="dialog" aria-modal="true">
+    <span class="close-button"></span>
+    <div class="modal-text">
+      <h3 class="modal-text__title"></h3>
+      <p class="modal-text__description"></p>
+    </div>
+    <img class="portfolio-card__big" src="" alt="Modal Image" />
+  </div>
+</div>
+
+<div class="contactForm" aria-hidden="true">
+  <div class="contactForm__wrapper" role="dialog" aria-modal="true">
+    <div class="contactForm__dots">
+      <span class="contactForm__dots-item"></span>
+      <span class="contactForm__dots-item"></span>
+      <span class="contactForm__dots-item"></span>
+    </div>
+
+    <div class="section__cols">
+      <div class="section__cols-left">
+        <h4 class="contactForm__title">
+          Конкуренты не ждут, уже <span> сейчас </span> заказывайте продающий
+          сайт
+        </h4>
+        <ul class="contactForm__text">
+          <li class="contactForm__text__item">
+            <a
+              href="tel:+77478142385"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#phone"></use>
+              </svg>
+              +7747 814 23 85
+            </a>
+          </li>
+          <li class="contactForm__text__item">
+            <a
+              href="mail.to:info@theloop.kz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#mail"></use>
+              </svg>
+              info@theloop.kz
+            </a>
+          </li>
+          <li class="contactForm__text__item">
+            <a href="/">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#location"></use>
+              </svg>
+              Алматы, Казахстан
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="section__cols-right">
+        <form class="contactForm__form" method="post" name="form1">
+          <div class="input-wrapper">
+            <label class="input-label" for="name">Имя*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              maxlength="30"
+              placeholder="Арман"
+              data-reg="^[А-ЯЁ][а-яё]*$"
+              class="input input-name"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label class="input-label" for="phone"> Номер телефона* </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              data-tel-input
+              placeholder="+7"
+              maxlength="18"
+              class="input input-phone"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label class="input-label" for="message"
+              >Какой сайт вам нужен?</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              class="input input-textarea"
+            ></textarea>
+          </div>
+
+          <input
+            type="submit"
+            value="Оставить заявку"
+            class="button button--secondary"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
