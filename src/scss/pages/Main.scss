@@ -720,6 +720,23 @@
       }
     }
   }
+
+  & .section__cards {
+     grid-template-rows: none;
+    &-item {
+      border-radius: 10px;
+      border: 1px solid $lavander-blue;
+      background-color: $sky-blue;
+      padding: 30px;
+      box-shadow: none;
+      & ul {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: $lavander-blue;
+        padding: 24px 0px;
+      }
+    }
+  }
 }
 
 .contactForm-section {

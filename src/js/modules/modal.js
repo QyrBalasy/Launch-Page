@@ -14,9 +14,7 @@ export function formModal() {
     }
   }
 
-  // for (let i = 0; i < trigger.length; i++) {
-  //   trigger[i].addEventListener("click", toggleModal);
-  // }
+ 
 
   triggers.forEach(function (trigger) {
     trigger.addEventListener("click", toggleModal);
@@ -25,6 +23,10 @@ export function formModal() {
   closeButton.addEventListener("click", toggleModal);
   window.addEventListener("click", windowOnClick);
 }
+
+ // for (let i = 0; i < trigger.length; i++) {
+  //   trigger[i].addEventListener("click", toggleModal);
+  // }
 
 export function initModal(modalSelectors) {
   const modal = document.querySelector(modalSelectors.modal);

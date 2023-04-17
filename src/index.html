@@ -72,8 +72,8 @@
             </div>
             <div class="section__cols-right">
               <picture>
-                <source srcset="@img/woman.webp" type="image/webp" />
-                <source srcset="@img/woman.png" type="image/png" />
+                <!-- <source srcset="@img/woman.webp" type="image/webp" />
+                <source srcset="@img/woman.png" type="image/png" /> -->
                 <img class="aboutUs__img" src="@img/woman.png" alt="woman" />
               </picture>
               <br style="clear: both" />
@@ -323,9 +323,17 @@
                   data-description="Разработка и дизайн корпоративного сайта для дополнительного образования."
                 >
                   <picture>
+                    <source
+                      srcset="@img/Liderstroy-small.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="@img/Liderstroy-small.png"
+                      type="image/png"
+                    />
                     <img
-                      src="@img/123.png"
-                      alt="Liderstroy-small"
+                      src="@img/Liderstroy-big.png"
+                      alt="Liderstroy-big"
                       class="portfolio-card__big"
                     />
                   </picture>
@@ -359,6 +367,13 @@
                   data-description="Лендинг страница для продажи кислородного баллона."
                 >
                   <picture>
+                    <img
+                      src="@img/oxyMaster-big.png"
+                      alt="Liderstroy-small"
+                      class="portfolio-card__big"
+                    />
+                  </picture>
+                  <picture>
                     <source
                       srcset="@img/oxyMaster-small.webp"
                       type="image/webp"
@@ -370,6 +385,7 @@
                     <img
                       src="@img/oxyMaster-small.png"
                       alt="Liderstroy-small"
+                      class="portfolio-card"
                     />
                   </picture>
                   <div class="portfolio__swiper-slide__text">
@@ -386,12 +402,23 @@
                   data-description="Дизайн одностраничного сайта для MVP проекта на конструкоре Tilda."
                 >
                   <picture>
+                    <img
+                      src="@img/FeedPet-big.png"
+                      alt="Liderstroy-small"
+                      class="portfolio-card__big"
+                    />
+                  </picture>
+                  <picture>
                     <source
                       srcset="@img/FeedPet-small.webp"
                       type="image/webp"
                     />
                     <source srcset="@img/FeedPet-small.png" type="image/png" />
-                    <img src="@img/FeedPet-small.png" alt="FeedPet-small" />
+                    <img
+                      src="@img/FeedPet-small.png"
+                      alt="FeedPet-small"
+                      class="portfolio-card"
+                    />
                   </picture>
                   <div class="portfolio__swiper-slide__text">
                     <h3 class="portfolio__swiper-slide__title">FeedPet</h3>
@@ -408,12 +435,23 @@
                   data-description="Дизайн с разработкой лендинг страницы для продажи курсов по арбитражу."
                 >
                   <picture>
+                    <img
+                      src="@img/DTVgroup-big.png"
+                      alt="Liderstroy-small"
+                      class="portfolio-card__big"
+                    />
+                  </picture>
+                  <picture>
                     <source
                       srcset="@img/DTVgroup-small.webp"
                       type="image/webp"
                     />
                     <source srcset="@img/DTVgroup-small.png" type="image/png" />
-                    <img src="@img/DTVgroup-small.png" alt="DTVgroup-small" />
+                    <img
+                      src="@img/DTVgroup-small.png"
+                      alt="DTVgroup-small"
+                      class="portfolio-card"
+                    />
                   </picture>
                   <div class="portfolio__swiper-slide__text">
                     <h3 class="portfolio__swiper-slide__title">DTV Group</h3>
@@ -430,9 +468,20 @@
                   data-description="Одностраничный сайт для услуг дизайн-интерьера."
                 >
                   <picture>
+                    <img
+                      src="@img/34cm-big.png"
+                      alt="Liderstroy-small"
+                      class="portfolio-card__big"
+                    />
+                  </picture>
+                  <picture>
                     <source srcset="@img/34cm-small.webp" type="image/webp" />
                     <source srcset="@img/34cm-small.png" type="image/png" />
-                    <img src="@img/34cm-small.png" alt="34cm-small" />
+                    <img
+                      src="@img/34cm-small.png"
+                      alt="34cm-small"
+                      class="portfolio-card"
+                    />
                   </picture>
                   <div class="portfolio__swiper-slide__text">
                     <h3 class="portfolio__swiper-slide__title">34cm</h3>
@@ -448,6 +497,13 @@
                   data-description="Разработка логотипа и презентации."
                 >
                   <picture>
+                    <img
+                      src="@img/climaTech-big.png"
+                      alt="Liderstroy-small"
+                      class="portfolio-card__big"
+                    />
+                  </picture>
+                  <picture>
                     <source
                       srcset="@img/climaTech-small.webp"
                       type="image/webp"
@@ -456,7 +512,11 @@
                       srcset="@img/climaTech-small.png"
                       type="image/png"
                     />
-                    <img src="@img/climaTech-small.png" alt="climaTech-small" />
+                    <img
+                      src="@img/climaTech-small.png"
+                      alt="climaTech-small"
+                      class="portfolio-card"
+                    />
                   </picture>
                   <div class="portfolio__swiper-slide__text">
                     <h3 class="portfolio__swiper-slide__title">ClimaTech</h3>
@@ -539,6 +599,28 @@
               Оставьте заявку и мы вам перезвоним, проконсультируем и отправим
               КП
             </p>
+          </div>
+          <div class="section__cards">
+            <div class="section__cards-item" data-price="50 000">
+              <h3 class="price__card-title">Лендинг</h3>
+              <ul>
+                <li>
+                  <p>Индивидуальный дизайн</p>
+                </li>
+                <li>
+                  <p>Система заявок</p>
+                </li>
+                <li>
+                  <p>Написание заголовков</p>
+                </li>
+                <li>
+                  <p>Начальная настройка рекламы</p>
+                </li>
+              </ul>
+
+              <h4 class="price__card-title-price">от 50 000 ₸</h4>
+              <button class="button form-trigger">Купить</button>
+            </div>
           </div>
         </div>
       </section>

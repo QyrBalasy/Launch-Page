@@ -47,6 +47,13 @@
     row-gap: 21px;
     margin-bottom: 73px;
   }
+  & .portfolio-card__big{
+    max-width: 900px;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    width: inherit;
+  }
   &.show-modal {
     opacity: 1;
     visibility: visible;
