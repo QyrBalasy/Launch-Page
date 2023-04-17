@@ -1,7 +1,7 @@
 {
-  "name": "uclsp",
+  "name": "theloop",
   "version": "1.0.0",
-  "description": "Corporate website",
+  "description": "landing page web development",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QyrBalasy/uclsp.git"
+    "url": "git+https://github.com/QyrBalasy/OurBrand.git"
   },
   "author": "qyrbalasy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/QyrBalasy/uclsp/issues"
+    "url": "https://github.com/QyrBalasy/OurBrand/issues"
   },
-  "homepage": "https://github.com/QyrBalasy/uclsp#readme",
+  "homepage": "https://github.com/QyrBalasy/OurBrand#readme",
   "dependencies": {
     "@splinetool/runtime": "^0.9.287",
     "browser-sync": "^2.27.10",
